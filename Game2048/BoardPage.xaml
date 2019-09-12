@@ -1,0 +1,60 @@
+﻿<Page x:Class="Game2048.BoardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Game2048"
+      mc:Ignorable="d" 
+      d:DesignHeight="580" d:DesignWidth="580"
+      ShowsNavigationUI="False"
+      Title="BoardPage">
+    <Page.Resources>
+        <SolidColorBrush x:Key="N2" Color="#EEE4DA" />
+        <SolidColorBrush x:Key="N4" Color="#EDE0C8" />
+        <SolidColorBrush x:Key="N8" Color="#F2B179" />
+        <SolidColorBrush x:Key="N16" Color="#F59563" />
+        <SolidColorBrush x:Key="N32" Color="#F67C5F" />
+        <SolidColorBrush x:Key="N64" Color="#F65E3B" />
+        <SolidColorBrush x:Key="N128" Color="#EDCF72" />
+        <SolidColorBrush x:Key="N256" Color="#EDCC61" />
+        <SolidColorBrush x:Key="N512" Color="#ECC850" />
+        <SolidColorBrush x:Key="N1024" Color="#EDC53F" />
+        <SolidColorBrush x:Key="N2048" Color="#EEC22E" />
+
+
+    </Page.Resources>
+
+    <Grid x:Name="BoardShow"  Background="#BCAD9D" Width="580" Height="580">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="149"/>
+            <ColumnDefinition Width="141"/>
+            <ColumnDefinition Width="141"/>
+            <ColumnDefinition Width="149"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="149"/>
+            <RowDefinition Height="141"/>
+            <RowDefinition Height="141"/>
+            <RowDefinition Height="149"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="label00" Grid.Column="0" Grid.Row="0" Height="125" Width="125" Margin="16,16,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label01" Grid.Column="1" Grid.Row="0" Height="125" Width="125" Margin="8,16,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label02" Grid.Column="2" Grid.Row="0" Height="125" Width="125" Margin="8,16,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label03" Grid.Column="3" Grid.Row="0" Height="125" Width="125" Margin="8,16,16,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label10" Grid.Column="0" Grid.Row="1" Height="125" Width="125" Margin="16,8,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label11" Grid.Column="1" Grid.Row="1" Height="125" Width="125" Margin="8,8,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label12" Grid.Column="2" Grid.Row="1" Height="125" Width="125" Margin="8,8,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label13" Grid.Column="3" Grid.Row="1" Height="125" Width="125" Margin="8,8,16,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label20" Grid.Column="0" Grid.Row="2" Height="125" Width="125" Margin="16,8,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label21" Grid.Column="1" Grid.Row="2" Height="125" Width="125" Margin="8,8,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label22" Grid.Column="2" Grid.Row="2" Height="125" Width="125" Margin="8,8,8,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label23" Grid.Column="3" Grid.Row="2" Height="125" Width="125" Margin="8,8,16,8" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label30" Grid.Column="0" Grid.Row="3" Height="125" Width="125" Margin="16,8,8,16" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label31" Grid.Column="1" Grid.Row="3" Height="125" Width="125" Margin="8,8,8,16" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label32" Grid.Column="2" Grid.Row="3" Height="125" Width="125" Margin="8,8,8,16" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label33" Grid.Column="3" Grid.Row="3" Height="125" Width="125" Margin="8,8,16,16" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Page>
